@@ -18,13 +18,43 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "TravelAgency",
+    "@type": "LocalBusiness",
+    "@id": "https://gotofethiye.com/#business",
     "name": "GoToFethiye",
     "url": "https://gotofethiye.com/",
-    "description": "Private Dalaman Airport transfer service to Fethiye, Ölüdeniz, Göcek, Kalkan, Kaş and surrounding destinations.",
+    "description": "Private Dalaman Airport transfer booking support from Belgium, arranging transfers to Fethiye, Ölüdeniz, Göcek, Kalkan, Kaş, Marmaris and surrounding destinations through selected local partners in Turkey.",
+    "telephone": "+32477035902",
+    "email": "info@gotofethiye.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Doelstraat 12",
+      "postalCode": "3583",
+      "addressLocality": "Paal",
+      "addressRegion": "Beringen",
+      "addressCountry": "BE"
+    },
     "areaServed": ["Dalaman Airport", "Fethiye", "Ölüdeniz", "Göcek", "Kalkan", "Kaş", "Marmaris"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+32477035902",
+      "contactType": "customer support",
+      "availableLanguage": ["English", "Turkish"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://gotofethiye.com/#dalaman-transfer-service",
+    "name": "Dalaman Airport Private Transfer",
     "serviceType": "Private Airport Transfer",
-    "telephone": "+32477035902"
+    "provider": {
+      "@id": "https://gotofethiye.com/#business"
+    },
+    "areaServed": ["Dalaman Airport", "Fethiye", "Ölüdeniz", "Göcek", "Kalkan", "Kaş", "Marmaris"],
+    "description": "Private airport transfer booking support from Dalaman Airport to Fethiye, Ölüdeniz, Göcek, Kalkan, Kaş and Marmaris."
   }
   </script>
 
@@ -54,7 +84,7 @@
         "name": "What happens if my flight is delayed?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Flight arrival times are monitored and pickup time is adjusted when necessary."
+          "text": "If you provide a valid flight number, flight arrival times can be monitored where reasonably possible and pickup time can be adjusted when necessary."
         }
       }
     ]
@@ -255,8 +285,7 @@
     footer {
       background: #051426;
       color: #cbd5e1;
-      text-align: center;
-      padding: 30px 20px;
+      padding: 44px 20px;
       font-size: 14px;
     }
 
@@ -327,6 +356,9 @@
         grid-template-columns: 1fr;
         text-align: center;
       }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .route-image {
@@ -346,9 +378,25 @@
     }
 
     .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 32px;
+      text-align: left;
+    }
+
+    .footer-grid p {
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 28px auto 0;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: #94a3b8;
+      font-size: 13px;
       text-align: left;
     }
 
@@ -371,6 +419,68 @@
       color: #ffffff;
     }
 
+    .about-section {
+      background: #ffffff;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .about-label {
+      display: inline-block;
+      color: var(--gold);
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .about-card {
+      background: #fffaf0;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .about-item {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .about-item strong {
+      display: block;
+      color: var(--navy);
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .about-item span {
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-bottom {
+        text-align: center;
+      }
+    }
+
   </style>
 </head>
 
@@ -379,10 +489,12 @@
     <div class="container nav">
       <a href="index.html" class="brand">GoToFethiye</a>
       <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
         <a href="#routes">Routes</a>
         <a href="#why-us">Why Us</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <a class="nav-cta" href="https://wa.me/32477035902?text=Hello%2C%20I%20would%20like%20to%20book%20a%20Dalaman%20Airport%20transfer." target="_blank" rel="noopener">WhatsApp</a>
     </div>
@@ -406,7 +518,7 @@
             <span>Fixed Price</span>
             <span>Flight Tracking</span>
             <span>Meet & Greet</span>
-            <span>24/7 Support</span>
+            <span>WhatsApp Support</span>
           </div>
         </div>
       </div>
@@ -416,18 +528,18 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Licensed & Trusted Airport Transfer Service</h2>
+          <h2>Trusted Private Airport Transfer Booking Support</h2>
           <p>
-            GoToFethiye operates through a licensed Turkish travel agency and provides private airport transfers for international visitors arriving at Dalaman Airport.
+            GoToFethiye is operated from Belgium and helps international visitors arrange private airport transfers from Dalaman Airport through selected local tourism and transportation partners in Turkey.
           </p>
         </div>
 
         <div class="grid grid-3">
 
           <article class="card">
-            <h3>Licensed Travel Agency</h3>
+            <h3>Local Licensed Partners</h3>
             <p>
-              Airport transfer services are provided through a licensed Turkish travel agency structure.
+              Transfers are arranged through selected local tourism and transportation partners in Turkey.
             </p>
           </article>
 
@@ -439,7 +551,7 @@
           </article>
 
           <article class="card">
-            <h3>24/7 WhatsApp Support</h3>
+            <h3>WhatsApp Support</h3>
             <p>
               Contact us before arrival, during your journey and after your booking.
             </p>
@@ -550,34 +662,50 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
+    <section class="about-section">
+      <div class="container about-grid">
 
-        <div class="section-title">
-          <h2>About GoToFethiye</h2>
+        <div class="about-content">
+          <span class="about-label">About GoToFethiye</span>
+
+          <h2>Private Dalaman Airport Transfers, Made Simple</h2>
+
           <p>
-            GoToFethiye helps visitors arrange private airport transfers from Dalaman Airport to popular destinations across the Fethiye region.
+            GoToFethiye helps international visitors arrange private airport transfers from Dalaman Airport to Fethiye, Ölüdeniz, Göcek, Kaş, Kalkan and Marmaris.
           </p>
+
+          <p>
+            Our focus is simple: clear communication, fixed prices and a smooth arrival experience from the airport to your accommodation.
+          </p>
+
+          <a class="btn whatsapp"
+            href="https://wa.me/32477035902?text=Hello%2C%20I%20would%20like%20to%20book%20a%20Dalaman%20Airport%20transfer."
+            target="_blank"
+            rel="noopener">
+            Contact on WhatsApp
+          </a>
         </div>
 
-        <div class="content">
+        <div class="about-card">
+          <div class="about-item">
+            <strong>Local Licensed Partners Structure</strong>
+            <span>Transfers are arranged through selected local tourism and transportation partners in Turkey.</span>
+          </div>
 
-          <p>
-            Our goal is simple: make airport arrivals easy, comfortable and stress-free.
-          </p>
+          <div class="about-item">
+            <strong>Private Vehicles Only</strong>
+            <span>No shared shuttle, no waiting, no unnecessary stops.</span>
+          </div>
 
-          <p>
-            We assist travellers arriving at Dalaman Airport and connect them with reliable private transfer services to Fethiye, Ölüdeniz, Göcek, Kaş, Kalkan and nearby holiday destinations.
-          </p>
+          <div class="about-item">
+            <strong>Direct Hotel & Villa Drop-off</strong>
+            <span>Travel directly from Dalaman Airport to your accommodation.</span>
+          </div>
 
-          <p>
-            Whether you are travelling as a couple, family or group, we aim to provide a smooth transfer experience from the moment you land until you arrive at your accommodation.
-          </p>
-
-          <p>
-            If you need a transfer quotation, simply send your travel details via WhatsApp and we will help you arrange your journey.
-          </p>
-
+          <div class="about-item">
+            <strong>Fast WhatsApp Booking</strong>
+            <span>Send your flight details and receive transfer information quickly.</span>
+          </div>
         </div>
 
       </div>
@@ -615,14 +743,14 @@
 
           <article class="trust-card">
             <div class="trust-icon">💬</div>
-            <h3>24/7 WhatsApp Support</h3>
+            <h3>WhatsApp Support</h3>
             <p>Contact us easily before arrival, during your journey and after booking.</p>
           </article>
 
           <article class="trust-card">
             <div class="trust-icon">✓</div>
-            <h3>Licensed Travel Agency</h3>
-            <p>Transfers are arranged through a licensed Turkish travel agency structure.</p>
+            <h3>Local Licensed Partners</h3>
+            <p>Transfers are arranged through selected local tourism and transportation partners in Turkey.</p>
           </article>
 
           <article class="trust-card">
@@ -709,7 +837,7 @@
         </div>
         <div class="faq-item">
           <h3>What happens if my flight is delayed?</h3>
-          <p>Flight arrival times are monitored and pickup time is adjusted when necessary.</p>
+          <p>If you provide a valid flight number, flight arrival times can be monitored where reasonably possible and pickup time can be adjusted when necessary.</p>
         </div>
         <div class="faq-item">
           <h3>Can I book a return airport transfer?</h3>
@@ -731,11 +859,15 @@
   </main>
 
   <footer>
-    <div class="container footer-grid">
+    <div class="footer-grid">
 
       <div>
-        <p><strong>GoToFethiye</strong></p>
-        <p>Dalaman Airport Transfer • Private Transfers • Fixed Price • 24/7 Support</p>
+        <strong>GoToFethiye</strong>
+        <p>Private airport transfers from Dalaman Airport to Fethiye, Ölüdeniz, Göcek, Kaş, Kalkan and Marmaris.</p>
+        <p>Operated from Belgium.</p>
+        <p>Business Registration: BE0801.950.567</p>
+        <p>VAT Exempt Small Business Scheme.</p>
+        <p>WhatsApp: +32 477 03 59 02</p>
       </div>
 
       <div class="footer-links">
@@ -748,6 +880,19 @@
         <a href="dalaman-to-marmaris-transfer.html">Dalaman Airport to Marmaris Transfer</a>
       </div>
 
+      <div class="footer-links">
+        <strong>Legal</strong>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms & Conditions</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 GoToFethiye. All rights reserved. VAT Exempt Small Business Scheme.
     </div>
   </footer>
   <a class="floating-whatsapp"

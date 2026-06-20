@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Refund & Cancellation Policy | GoToFethiye</title>
+
+  <meta
+    name="description"
+    content="Refund and cancellation policy for GoToFethiye private Dalaman Airport transfer bookings."
+  />
+
+  <style>
+    :root {
+      --navy: #071b33;
+      --gold: #d7a84b;
+      --cream: #f8f3e8;
+      --text: #172033;
+      --muted: #687385;
+      --white: #ffffff;
+      --border: #e9dcc5;
+      --green: #25d366;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+      color: #e5e7eb;
+    }
+
+    .nav-cta {
+      background: var(--gold);
+      color: #111827;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    .page-hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 70px 0;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.05;
+      margin-bottom: 16px;
+      letter-spacing: -1.4px;
+    }
+
+    .page-hero p {
+      color: #dbeafe;
+      font-size: 19px;
+      max-width: 760px;
+    }
+
+    .content-section {
+      padding: 70px 0;
+    }
+
+    .policy-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 10px 30px rgba(7, 27, 51, 0.06);
+    }
+
+    .policy-card h2 {
+      color: var(--navy);
+      font-size: 28px;
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    .policy-card h2:first-child {
+      margin-top: 0;
+    }
+
+    .policy-card h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .policy-card p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 17px;
+    }
+
+    .policy-card ul {
+      margin: 12px 0 22px 22px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .policy-card li {
+      margin-bottom: 8px;
+    }
+
+    .info-box {
+      background: #fffaf0;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      margin: 24px 0;
+    }
+
+    .info-box strong {
+      color: var(--navy);
+    }
+
+    .highlight-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 18px;
+      padding: 22px;
+      margin: 24px 0;
+    }
+
+    .highlight-box strong {
+      color: #14532d;
+    }
+
+    .warning-box {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-radius: 18px;
+      padding: 22px;
+      margin: 24px 0;
+    }
+
+    .warning-box strong {
+      color: #9a3412;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 800;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #051426;
+      color: #cbd5e1;
+      padding: 44px 20px;
+      font-size: 14px;
+    }
+
+    .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 32px;
+    }
+
+    .footer-grid strong {
+      display: block;
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .footer-grid p {
+      margin-bottom: 8px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-links a {
+      color: #cbd5e1;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 28px auto 0;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .nav-links {
+        display: none;
+      }
+
+      .policy-card {
+        padding: 24px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand">GoToFethiye</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#routes">Routes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a
+        class="nav-cta"
+        href="https://wa.me/32477035902?text=Hello%2C%20I%20would%20like%20to%20book%20a%20Dalaman%20Airport%20transfer."
+        target="_blank"
+        rel="noopener"
+      >
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Refund & Cancellation Policy</h1>
+        <p>
+          This policy explains how cancellations, refunds, no-shows and booking changes are handled for GoToFethiye private airport transfer bookings.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="policy-card">
+
+          <p><strong>Last Updated:</strong> June 2026</p>
+
+          <h2>1. Introduction</h2>
+
+          <p>
+            This Refund & Cancellation Policy applies to private airport transfer bookings arranged through GoToFethiye.
+          </p>
+
+          <p>
+            By confirming a booking with GoToFethiye, you agree to this policy.
+          </p>
+
+          <h2>2. Business Information</h2>
+
+          <p>
+            GoToFethiye is operated from Belgium and helps international visitors arrange private airport transfers in Turkey through selected local transportation partners.
+          </p>
+
+          <div class="info-box">
+            <p><strong>Business Owner:</strong> Selim Çumkur</p>
+            <p><strong>Business Registration Number:</strong> BE0801.950.567</p>
+            <p><strong>VAT Status:</strong> VAT Exempt Small Business Scheme</p>
+            <p><strong>Address:</strong><br>
+              Doelstraat 12<br>
+              3583 Paal (Beringen)<br>
+              Belgium
+            </p>
+            <p><strong>WhatsApp:</strong> +32 477 03 59 02</p>
+            <p><strong>Email:</strong> info@gotofethiye.com</p>
+            <p><strong>Website:</strong> https://gotofethiye.com</p>
+          </div>
+
+          <h2>3. Free Cancellation Period</h2>
+
+          <div class="highlight-box">
+            <p>
+              <strong>Customers may cancel a confirmed transfer free of charge up to 24 hours before the scheduled pickup time.</strong>
+            </p>
+          </div>
+
+          <p>
+            If the cancellation request is received more than 24 hours before pickup, the customer may be eligible for a full refund, unless a different written agreement has been made.
+          </p>
+
+          <h2>4. Cancellations Less Than 24 Hours Before Pickup</h2>
+
+          <div class="warning-box">
+            <p>
+              <strong>Cancellations made less than 24 hours before the scheduled pickup time may not be eligible for a full refund.</strong>
+            </p>
+          </div>
+
+          <p>
+            This is because the vehicle, driver and local transportation partner may already have been reserved for the transfer.
+          </p>
+
+          <p>
+            In some cases, partial refunds or rescheduling may be offered at the discretion of GoToFethiye and the assigned transfer partner.
+          </p>
+
+          <h2>5. No-Show Policy</h2>
+
+          <p>
+            A no-show occurs when the customer:
+          </p>
+
+          <ul>
+            <li>Does not appear at the agreed pickup location</li>
+            <li>Cannot be contacted within a reasonable time</li>
+            <li>Leaves the pickup area without informing GoToFethiye or the assigned transfer partner</li>
+            <li>Provides incorrect pickup details and cannot be found</li>
+          </ul>
+
+          <div class="warning-box">
+            <p>
+              <strong>No-shows are not eligible for a refund.</strong>
+            </p>
+          </div>
+
+          <h2>6. Flight Delays</h2>
+
+          <p>
+            If the customer provides a valid flight number, GoToFethiye or the assigned transfer partner may monitor the flight arrival time where reasonably possible.
+          </p>
+
+          <p>
+            Flight delays do not automatically cancel a transfer.
+          </p>
+
+          <p>
+            We will make reasonable efforts to adjust the pickup time according to the updated flight arrival information.
+          </p>
+
+          <p>
+            However, in cases of very long delays, airport disruption, communication failure or driver availability issues, the transfer may need to be rearranged.
+          </p>
+
+          <h2>7. Flight Cancellations</h2>
+
+          <p>
+            If your flight is cancelled, you must inform GoToFethiye as soon as possible by WhatsApp or email.
+          </p>
+
+          <p>
+            We will make reasonable efforts to reschedule your transfer depending on availability.
+          </p>
+
+          <p>
+            Refund eligibility for flight cancellations may depend on:
+          </p>
+
+          <ul>
+            <li>When GoToFethiye was informed</li>
+            <li>Whether the vehicle and driver had already been assigned</li>
+            <li>Whether costs had already been incurred</li>
+            <li>Whether an alternative transfer can be arranged</li>
+          </ul>
+
+          <h2>8. Booking Changes</h2>
+
+          <p>
+            Customers may request changes to a confirmed booking, including:
+          </p>
+
+          <ul>
+            <li>Pickup time</li>
+            <li>Flight number</li>
+            <li>Destination address</li>
+            <li>Passenger count</li>
+            <li>Luggage amount</li>
+            <li>Return transfer details</li>
+          </ul>
+
+          <p>
+            Changes are subject to availability and must be confirmed in writing by GoToFethiye.
+          </p>
+
+          <p>
+            Additional charges may apply if the change affects the route, vehicle size, waiting time, driver schedule or service cost.
+          </p>
+
+          <h2>9. Service Failure</h2>
+
+          <p>
+            If a confirmed transfer cannot be provided due to an error by GoToFethiye or the assigned transfer partner, the customer may be offered:
+          </p>
+
+          <ul>
+            <li>An alternative transfer arrangement, or</li>
+            <li>A full refund for the affected transfer</li>
+          </ul>
+
+          <p>
+            This does not apply to cases caused by incorrect customer information, no-shows, force majeure events or circumstances outside reasonable control.
+          </p>
+
+          <h2>10. Refund Method</h2>
+
+          <p>
+            Approved refunds will normally be returned using the original payment method where possible.
+          </p>
+
+          <p>
+            Refund processing times may vary depending on the payment provider, bank or card issuer.
+          </p>
+
+          <p>
+            Typical processing times may be:
+          </p>
+
+          <ul>
+            <li>Card payments: 5–10 business days</li>
+            <li>Bank transfers: 3–10 business days</li>
+            <li>Other payment methods: depending on the provider</li>
+          </ul>
+
+          <p>
+            GoToFethiye is not responsible for delays caused by banks, card issuers or third-party payment providers.
+          </p>
+
+          <h2>11. Payment Provider Fees</h2>
+
+          <p>
+            In some cases, payment providers may charge processing or transaction fees.
+          </p>
+
+          <p>
+            If such fees are non-refundable by the payment provider, the refunded amount may be reduced accordingly.
+          </p>
+
+          <h2>12. Force Majeure</h2>
+
+          <p>
+            GoToFethiye and its transfer partners are not responsible for cancellations, delays or service disruption caused by events outside reasonable control.
+          </p>
+
+          <p>
+            These events may include:
+          </p>
+
+          <ul>
+            <li>Extreme weather</li>
+            <li>Natural disasters</li>
+            <li>Road closures</li>
+            <li>Traffic accidents</li>
+            <li>Airport closures</li>
+            <li>Flight disruptions</li>
+            <li>Government actions</li>
+            <li>Police or security restrictions</li>
+            <li>War, civil unrest or emergency situations</li>
+            <li>Other force majeure events</li>
+          </ul>
+
+          <p>
+            In such cases, GoToFethiye will try to offer a reasonable alternative where possible, but a full refund cannot always be guaranteed.
+          </p>
+
+          <h2>13. How To Request A Cancellation Or Refund</h2>
+
+          <p>
+            To request a cancellation, booking change or refund, please contact us as soon as possible.
+          </p>
+
+          <p>
+            Please include:
+          </p>
+
+          <ul>
+            <li>Your full name</li>
+            <li>Booking date</li>
+            <li>Pickup date and time</li>
+            <li>Route or destination</li>
+            <li>Reason for cancellation or refund request</li>
+            <li>Payment confirmation, if available</li>
+          </ul>
+
+          <h2>14. Contact</h2>
+
+          <p>
+            For cancellation or refund questions, please contact us:
+          </p>
+
+          <div class="info-box">
+            <p><strong>GoToFethiye</strong></p>
+            <p><strong>Business Owner:</strong> Selim Çumkur</p>
+            <p><strong>Address:</strong><br>
+              Doelstraat 12<br>
+              3583 Paal (Beringen)<br>
+              Belgium
+            </p>
+            <p><strong>WhatsApp:</strong> +32 477 03 59 02</p>
+            <p><strong>Email:</strong> info@gotofethiye.com</p>
+
+            <a
+              class="whatsapp-btn"
+              href="https://wa.me/32477035902?text=Hello%2C%20I%20have%20a%20question%20about%20a%20GoToFethiye%20refund%20or%20cancellation."
+              target="_blank"
+              rel="noopener"
+            >
+              Contact on WhatsApp
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+
+      <div>
+        <strong>GoToFethiye</strong>
+        <p>Private airport transfers from Dalaman Airport to Fethiye, Ölüdeniz, Göcek, Kaş, Kalkan and Marmaris.</p>
+        <p>Operated from Belgium.</p>
+        <p>Business Registration: BE0801.950.567</p>
+        <p>WhatsApp: +32 477 03 59 02</p>
+      </div>
+
+      <div class="footer-links">
+        <strong>Popular Transfers</strong>
+        <a href="dalaman-to-fethiye-transfer.html">Dalaman Airport to Fethiye Transfer</a>
+        <a href="dalaman-to-oludeniz-transfer.html">Dalaman Airport to Ölüdeniz Transfer</a>
+        <a href="dalaman-to-gocek-transfer.html">Dalaman Airport to Göcek Transfer</a>
+        <a href="dalaman-to-kalkan-transfer.html">Dalaman Airport to Kalkan Transfer</a>
+        <a href="dalaman-to-kas-transfer.html">Dalaman Airport to Kaş Transfer</a>
+        <a href="dalaman-to-marmaris-transfer.html">Dalaman Airport to Marmaris Transfer</a>
+      </div>
+
+      <div class="footer-links">
+        <strong>Legal</strong>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms & Conditions</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 GoToFethiye. All rights reserved. VAT Exempt Small Business Scheme.
+    </div>
+  </footer>
+
+</body>
+</html>

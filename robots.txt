@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cumkur.github.io/gotofethiye/sitemap.xml
+Sitemap: https://gotofethiye.com/sitemap.xml
